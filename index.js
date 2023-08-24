@@ -1,8 +1,9 @@
 import express from "express";
 
-console.log("Esto es una prueba");
-
 // 1- Configuraciones iniciales
+const app = express();
+
+app.set("port", process.env.PORT || 4000);
 
 // 2- middlewares
 

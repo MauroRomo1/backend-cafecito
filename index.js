@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import "dotenv/config"; // permite procesar las variables de entorno
-
 import productoRouter from "./src/routes/productos.routes.js";
 import usuarioRouter from "./src/routes/usuarios.routes.js";
+import "./src/database/database.js";
 
 // 1- Configuraciones iniciales
 const app = express();
